@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impacto del Deporte en los Jóvenes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --secondary: #34a853;
+            --dark: #202124;
+            --light: #f8f9fa;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eef2f7;
+            color: var(--dark);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Sección de Integrantes */
+        .team-section {
+            background: var(--white);
+            max-width: 800px;
+            margin: -30px auto 40px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            text-align: center;
+        }
+
+        .team-info {
+            border-right: 1px solid #eee;
+        }
+
+        .team-info:last-child {
+            border-right: none;
+        }
+
+        .team-info h4 {
+            margin: 5px 0;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        /* Contenedor General */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Tarjetas de Contenido */
+        .card {
+            background: var(--white);
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: var(--secondary);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li::before {
+            content: "✔";
+            color: var(--secondary);
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Estilo para los Objetivos */
+        .objectives-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .objectives-grid {
+                grid-template-columns: 1fr;
+            }
+            .team-section {
+                margin: -30px 20px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Investigación Deportiva</h1>
+    <p>El impacto del deporte en la vida de los jóvenes</p>
+</header>
+
+<section class="team-section">
+    <div class="team-info">
+        <h4>Grupo</h4>
+        <p>BTMV-2C</p>
+    </div>
+    <div class="team-info">
+        <h4>Integrante 1</h4>
+        <p>Cruz Adame Mauricio Gael</p>
+    </div>
+    <div class="team-info">
+        <h4>Integrante 2</h4>
+        <p>Rodríguez Flores Carlos Iván</p>
+    </div>
+    <div class="team-info">
+        <h4>Integrante 3</h4>
+        <p>Solano Valois Axel Gael</p>
+    </div>
+</section>
+
+<div class="container">
+
+    <section class="card">
+        <h2>Elección del tema</h2>
+        <p>Elegimos el tema del impacto del deporte en los jóvenes porque es algo que vivimos día a día. Actualmente, muchos jóvenes pasan gran parte de su tiempo en el celular o en redes sociales, por lo que el deporte se vuelve una alternativa importante para mantenerse activos.</p>
+        <p>Además, el deporte no solo sirve para entretenerse, sino que también influye en diferentes aspectos de la vida, como la salud física, las emociones y la forma en que convivimos con otras personas. Por eso consideramos que es un tema actual, relevante y fácil de investigar dentro de nuestro entorno.</p>
+    </section>
+
+    <section class="card">
+        <h2>Objetivos</h2>
+        <h3>Objetivo general</h3>
+        <p>Analizar la influencia del deporte en la salud y la convivencia de los jóvenes.</p>
+        
+        <div class="objectives-grid">
+            <div>
+                <h3>Objetivos específicos</h3>
+                <ul>
+                    <li>Identificar los principales beneficios físicos que obtienen los jóvenes al practicar deporte.</li>
+                    <li>Analizar de qué manera el deporte favorece la convivencia, la comunicación y el trabajo en equipo.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Método y Técnica</h2>
+        <p>Para realizar esta investigación utilizamos principalmente <strong>encuestas</strong>.</p>
+        <p>Las encuestas fueron aplicadas a jóvenes en el lugar donde entrenamos, lo que facilitó obtener respuestas de personas que practican deporte de manera constante.</p>
+        <div style="background: #f0f7f1; padding: 15px; border-radius: 10px; border-left: 4px solid var(--secondary);">
+            <strong>Justificación:</strong> Elegimos esta técnica porque nos permite recopilar información de forma rápida y directa. Además, pudimos obtener respuestas más reales ya que los encuestados tienen experiencia directa.
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Desarrollo</h2>
+        <p>Primero elaboramos una encuesta con preguntas relacionadas con la frecuencia deportiva, beneficios percibidos y tiempo en dispositivos móviles. Después, aplicamos la encuesta en nuestro lugar de entrenamiento y registramos las respuestas. Finalmente, organizamos los datos para identificar patrones y entender la influencia del deporte en su vida diaria.</p>
+    </section>
+
+    <section class="card">
+        <h2>Análisis de la información</h2>
+        <p>A partir de los datos obtenidos, pudimos observar que la mayoría de los jóvenes considera que el deporte tiene efectos positivos en su vida:</p>
+        <ul>
+            <li><strong>Salud:</strong> Ayuda a mantenerse en forma, tener más energía y un estilo de vida activo.</li>
+            <li><strong>Social:</strong> Permite convivir mejor, hacer amigos y fortalecer el trabajo en equipo.</li>
+            <li><strong>Alternativa:</strong> Se prefiere el deporte sobre el uso excesivo de redes sociales.</li>
+        </ul>
+    </section>
+
+    <section class="card" style="background: var(--primary); color: white;">
+        <h2 style="color: white; border-color: var(--secondary);">Conclusión</h2>
+        <p>El deporte es una actividad que va más allá del entretenimiento, ya que aporta múltiples beneficios a los jóvenes. No solo mejora la salud física, sino que también fortalece la convivencia y fomenta valores importantes como la disciplina, el respeto y el trabajo en equipo.</p>
+        <p>Concluimos que practicar deporte de manera constante ayuda a tener un estilo de vida más saludable y equilibrado, por lo que debería promoverse más en la rutina diaria.</p>
+    </section>
+
+</div>
+
+
+
+</body>
+</html>
